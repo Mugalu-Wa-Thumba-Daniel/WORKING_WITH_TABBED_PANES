@@ -5,31 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb629db4-fd65-4bcc-94fc-7761dee26809" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/src/main/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/src/test/java/WorkingWithTabbedPanes/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/ModelPack/Doctors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/ModelPack/Patients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/test/java/WorkingWithTabbedPanes/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/DoctorsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/HomePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/PatientsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/src/main/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/src/test/java/WorkingWithTabbedPanes/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Model/Doctors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Model/Patients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/HomePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/images/image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/images/image_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/src/main/java/ControllerPack/MainFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/src/main/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/src/test/java/WorkingWithTabbedPanes/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/ModelPack/Doctors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/ModelPack/Patients.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/test/java/WorkingWithTabbedPanes/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/DoctorsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/DoctorsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/HomePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/src/main/java/ViewsPack/PatientsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/PatientsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/src/main/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/src/test/java/WorkingWithTabbedPanes/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +46,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2tFwP1qIdhR2z4id9g3coMlNOJc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,12 +64,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MainApp.executor": "Run",
+    "Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/# IUEA_COURSES/Y2 SEMESTER 2/Applied Object Oriented Programming/Solutions/Practical/WORKING_WITH_TABBED_PANES/Views/src/main/java/ViewsPack"
+    "last_opened_file_path": "E:/# IUEA_COURSES/Y2 SEMESTER 2/Applied Object Oriented Programming/Solutions/Practical/WORKING_WITH_TABBED_PANES/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,6 +85,40 @@
       <recent name="E:\# IUEA_COURSES\Y2 SEMESTER 2\Applied Object Oriented Programming\Solutions\Practical\WORKING_WITH_TABBED_PANES\Model\src\main\java\ModelPack" />
       <recent name="E:\# IUEA_COURSES\Y2 SEMESTER 2\Applied Object Oriented Programming\Solutions\Practical\WORKING_WITH_TABBED_PANES\Controller\src\main\java\ControllerPack" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControllerPack.MainApp" />
+      <module name="Controller" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ControllerPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src.main.java.WorkingWithTabbedPanes.Controller.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.java.WorkingWithTabbedPanes.Controller.MainApp" />
+      <module name="WORKING_WITH_TABBED_PANES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.java.WorkingWithTabbedPanes.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp" />
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

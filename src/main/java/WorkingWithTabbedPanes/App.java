@@ -1,4 +1,4 @@
-package WorkingWithTabbedPanes;
+package src.main.java.WorkingWithTabbedPanes;
 
 /**
  * Hello world!
