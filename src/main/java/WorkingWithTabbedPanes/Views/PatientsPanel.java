@@ -1,7 +1,5 @@
 package src.main.java.WorkingWithTabbedPanes.Views;
 
-import src.main.java.WorkingWithTabbedPanes.Controller.MainFrame;
-import src.main.java.WorkingWithTabbedPanes.Controller.MainController;
 import src.main.java.WorkingWithTabbedPanes.Model.Patients;
 
 import javax.swing.*;
@@ -13,18 +11,14 @@ import java.util.List;
  * PatientsPanel is the panel that displays the list of patients.
  * It includes a table with patient data and buttons for Add, Edit, Delete, and Refresh.
  */
-public class PatientsPanel {
-    private JFrame frame;
+public class PatientsPanel extends JPanel {
     private JTable table;
     private List<Patients> patientsList;
     private DefaultTableModel tableModel;
 
     public PatientsPanel(List<Patients> patientsList) {
-        frame = new JFrame("Patients List");
-        frame.setSize(800, 600);
-        frame.setLocationRelativeTo(null);
         this.patientsList = patientsList;
-        frame.setLayout(new BorderLayout());
+        setLayout(new BorderLayout());
 
         configureMenuBar();
         configureLabel();
@@ -42,15 +36,8 @@ public class PatientsPanel {
         JMenuItem homeItem = new JMenuItem("Home");
         JMenuItem backItem = new JMenuItem("Back");
 
-        homeItem.addActionListener(e -> {
-            HomePanel homePanel = new HomePanel();
-            homePanel.setVisible(true);
-            frame.dispose();
-        });
-        backItem.addActionListener(e -> {
-            new MainFrame();
-            frame.dispose();
-        });
+        homeItem.addActionListener(e -> JOptionPane.showMessageDialog(this, "Home button clicked!"));
+        backItem.addActionListener(e -> JOptionPane.showMessageDialog(this, "Back button clicked!"));
 
         navigationMenu.add(homeItem);
         navigationMenu.add(backItem);
@@ -59,11 +46,7 @@ public class PatientsPanel {
         JMenuItem doctorsItem = new JMenuItem("Doctors");
         JMenuItem patientsItem = new JMenuItem("Patients");
 
-        doctorsItem.addActionListener(e -> {
-            DoctorsPanel doctorsPanel = new DoctorsPanel(new MainController(frame).getDoctorsList());
-            doctorsPanel.setVisible(true);
-            frame.dispose();
-        });
+        doctorsItem.addActionListener(e -> JOptionPane.showMessageDialog(this, "Doctors button clicked!"));
         patientsItem.addActionListener(e -> {
             // Stay on the same panel
         });
@@ -74,7 +57,7 @@ public class PatientsPanel {
         menuBar.add(navigationMenu);
         menuBar.add(manageDataMenu);
 
-        frame.setJMenuBar(menuBar);
+        add(menuBar, BorderLayout.NORTH);
     }
 
     /**
@@ -82,7 +65,7 @@ public class PatientsPanel {
      */
     private void configureLabel() {
         JLabel label = new JLabel("Patients List", JLabel.CENTER);
-        frame.add(label, BorderLayout.NORTH);
+        add(label, BorderLayout.NORTH);
     }
 
     /**
@@ -98,7 +81,7 @@ public class PatientsPanel {
         }
 
         table = new JTable(tableModel);
-        frame.add(new JScrollPane(table), BorderLayout.CENTER);
+        add(new JScrollPane(table), BorderLayout.CENTER);
     }
 
     /**
@@ -122,7 +105,7 @@ public class PatientsPanel {
         buttonPanel.add(deleteButton);
         buttonPanel.add(refreshButton);
 
-        frame.add(buttonPanel, BorderLayout.SOUTH);
+        add(buttonPanel, BorderLayout.SOUTH);
     }
 
     /**
@@ -162,7 +145,7 @@ public class PatientsPanel {
                 tableModel.setValueAt(diagnosis, selectedRow, 3);
             }
         } else {
-            JOptionPane.showMessageDialog(frame, "Please select a patient to edit.");
+            JOptionPane.showMessageDialog(this, "Please select a patient to edit.");
         }
     }
 
@@ -175,7 +158,7 @@ public class PatientsPanel {
             patientsList.remove(selectedRow);
             tableModel.removeRow(selectedRow);
         } else {
-            JOptionPane.showMessageDialog(frame, "Please select a patient to delete.");
+            JOptionPane.showMessageDialog(this, "Please select a patient to delete.");
         }
     }
 
@@ -190,6 +173,6 @@ public class PatientsPanel {
     }
 
     public void setVisible(boolean visible) {
-        frame.setVisible(visible);
+        super.setVisible(visible);
     }
 }

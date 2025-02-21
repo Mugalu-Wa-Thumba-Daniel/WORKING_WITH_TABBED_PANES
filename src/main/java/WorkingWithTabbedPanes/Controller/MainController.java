@@ -2,10 +2,7 @@ package src.main.java.WorkingWithTabbedPanes.Controller;
 
 import src.main.java.WorkingWithTabbedPanes.Model.Doctors;
 import src.main.java.WorkingWithTabbedPanes.Model.Patients;
-import src.main.java.WorkingWithTabbedPanes.Views.DoctorsPanel;
-import src.main.java.WorkingWithTabbedPanes.Views.PatientsPanel;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,12 +10,10 @@ import java.util.List;
  * MainController handles the navigation between different views and manages data interactions.
  */
 public class MainController {
-    private JFrame mainFrame;
     private List<Doctors> doctorsList;
     private List<Patients> patientsList;
 
-    public MainController(JFrame frame) {
-        this.mainFrame = frame;
+    public MainController() {
         this.doctorsList = new ArrayList<>();
         this.patientsList = new ArrayList<>();
 
@@ -37,25 +32,15 @@ public class MainController {
     }
 
     /**
-     * Shows the doctors view.
+     * Gets the list of doctors.
      */
-    public void showDoctorsView() {
-        DoctorsPanel doctorsPanel = new DoctorsPanel(doctorsList);
-        doctorsPanel.setVisible(true);
-    }
-
-    /**
-     * Shows the patients view.
-     */
-    public void showPatientsView() {
-        PatientsPanel patientsPanel = new PatientsPanel(patientsList);
-        patientsPanel.setVisible(true);
-    }
-
     public List<Doctors> getDoctorsList() {
         return doctorsList;
     }
 
+    /**
+     * Gets the list of patients.
+     */
     public List<Patients> getPatientsList() {
         return patientsList;
     }
