@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb629db4-fd65-4bcc-94fc-7761dee26809" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/ContactFormPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/InfoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/DoctorsPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/DoctorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/IntegrationTestForPatientsPanelDoctorsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/InterationTestForDoctorPatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/PatientsPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WorkingWithTabbedPanes/PatientsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Controller/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/DoctorsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/DoctorsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/HomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/PatientsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Views/PatientsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WORKING_WITH_TABBED_PANES/src/main/java/WorkingWithTabbedPanes/Model/Patients.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WORKING_WITH_TABBED_PANES/src/main/java/WorkingWithTabbedPanes/Model/Patients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Model/Patients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkingWithTabbedPanes/Model/Patients.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -41,61 +43,141 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/# IUEA_COURSES/Y2 SEMESTER 2/Applied Object Oriented Programming/Solutions/Practical/WORKING_WITH_TABBED_PANES/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainApp.executor": "Run",
+    "Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.DoctorsPanelTest.executor": "Run",
+    "JUnit.DoctorsPanelTest.testSetVisible.executor": "Run",
+    "JUnit.DoctorsTest.executor": "Run",
+    "JUnit.DoctorsTest.getId.executor": "Run",
+    "JUnit.DoctorsTest.getName.executor": "Run",
+    "JUnit.DoctorsTest.getSpecialisation.executor": "Run",
+    "JUnit.IntegrationTestForPatientsPanelDoctorsPanel.executor": "Run",
+    "JUnit.InterationTestForDoctorPatient.testDoctorDetailsModification.executor": "Run",
+    "JUnit.InterationTestForDoctorPatient.testDoctorPatientInteraction.executor": "Run",
+    "JUnit.PatientsPanelTest.setVisible.executor": "Run",
+    "JUnit.PatientsTest.setAge.executor": "Run",
+    "JUnit.PatientsTest.setDiagnosis.executor": "Run",
+    "JUnit.PatientsTest.setId.executor": "Run",
+    "JUnit.PatientsTest.setName.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "Update__01",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/# IUEA_COURSES/Y2 SEMESTER 2/Applied Object Oriented Programming/Solutions/Practical/WORKING_WITH_TABBED_PANES/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\# IUEA_COURSES\Y2 SEMESTER 2\Applied Object Oriented Programming\Solutions\Practical\WORKING_WITH_TABBED_PANES\Views\src\main\java\ViewsPack" />
       <recent name="E:\# IUEA_COURSES\Y2 SEMESTER 2\Applied Object Oriented Programming\Solutions\Practical\WORKING_WITH_TABBED_PANES\Model\src\main\java\ModelPack" />
       <recent name="E:\# IUEA_COURSES\Y2 SEMESTER 2\Applied Object Oriented Programming\Solutions\Practical\WORKING_WITH_TABBED_PANES\Controller\src\main\java\ControllerPack" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="src.test.java.WorkingWithTabbedPanes" />
+      <recent name="src.main.java.WorkingWithTabbedPanes.Views" />
+      <recent name="src.main.java.WorkingWithTabbedPanes.Model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp">
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ControllerPack.MainApp" />
-      <module name="Controller" />
+  <component name="RunManager" selected="JUnit.IntegrationTestForPatientsPanelDoctorsPanel">
+    <configuration name="DoctorsPanelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WORKING_WITH_TABBED_PANES" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ControllerPack.*" />
+          <option name="PATTERN" value="src.test.java.WorkingWithTabbedPanes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="src.test.java.WorkingWithTabbedPanes" />
+      <option name="MAIN_CLASS_NAME" value="src.test.java.WorkingWithTabbedPanes.DoctorsPanelTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="src.main.java.WorkingWithTabbedPanes.Controller.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.java.WorkingWithTabbedPanes.Controller.MainApp" />
+    <configuration name="DoctorsPanelTest.testSetVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WORKING_WITH_TABBED_PANES" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.WorkingWithTabbedPanes.Controller.*" />
+          <option name="PATTERN" value="src.test.java.WorkingWithTabbedPanes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="src.test.java.WorkingWithTabbedPanes" />
+      <option name="MAIN_CLASS_NAME" value="src.test.java.WorkingWithTabbedPanes.DoctorsPanelTest" />
+      <option name="METHOD_NAME" value="testSetVisible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTestForPatientsPanelDoctorsPanel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WORKING_WITH_TABBED_PANES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.test.java.WorkingWithTabbedPanes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="src.test.java.WorkingWithTabbedPanes" />
+      <option name="MAIN_CLASS_NAME" value="src.test.java.WorkingWithTabbedPanes.IntegrationTestForPatientsPanelDoctorsPanel" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterationTestForDoctorPatient.testDoctorDetailsModification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WORKING_WITH_TABBED_PANES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.test.java.WorkingWithTabbedPanes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="src.test.java.WorkingWithTabbedPanes" />
+      <option name="MAIN_CLASS_NAME" value="src.test.java.WorkingWithTabbedPanes.InterationTestForDoctorPatient" />
+      <option name="METHOD_NAME" value="testDoctorDetailsModification" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientsPanelTest.setVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WORKING_WITH_TABBED_PANES" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.test.java.WorkingWithTabbedPanes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="src.test.java.WorkingWithTabbedPanes" />
+      <option name="MAIN_CLASS_NAME" value="src.test.java.WorkingWithTabbedPanes.PatientsPanelTest" />
+      <option name="METHOD_NAME" value="setVisible" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.src.main.java.WorkingWithTabbedPanes.Controller.MainApp" />
-        <item itemvalue="Application.MainApp" />
+        <item itemvalue="JUnit.IntegrationTestForPatientsPanelDoctorsPanel" />
+        <item itemvalue="JUnit.PatientsPanelTest.setVisible" />
+        <item itemvalue="JUnit.DoctorsPanelTest.testSetVisible" />
+        <item itemvalue="JUnit.DoctorsPanelTest" />
+        <item itemvalue="JUnit.InterationTestForDoctorPatient.testDoctorDetailsModification" />
       </list>
     </recent_temporary>
   </component>

@@ -23,8 +23,9 @@ public class Patients {
         return id;
     }
 
-    public void setId(int id) {
+    public int setId(int id) {
         this.id = id;
+        return id;
     }
 
     // Getter and Setter for Name
