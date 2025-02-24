@@ -23,7 +23,26 @@ public class MainFrame {
         frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
 
+<<<<<<< Updated upstream
         mainController = new MainController(frame); // Initialize MainController
+=======
+        mainController = new MainController(); // Initialize MainController
+
+        // Create Tabbed Pane
+        JTabbedPane tabbedPane = new JTabbedPane();
+        tabbedPane.setFont(new Font("Calibre", Font.BOLD, 23));
+        tabbedPane.setBackground(Color.CYAN);
+
+        // Add Tabs
+        tabbedPane.addTab("Home", new HomePanel());
+        tabbedPane.addTab("Doctors", new DoctorsPanel(mainController.getDoctorsList())); // Provide doctors list
+        tabbedPane.addTab("Patients", new PatientsPanel(mainController.getPatientsList())); // Provide patients list
+        tabbedPane.addTab("Contact", new ContactFormPanel());
+        tabbedPane.addTab("Info", new InfoPanel());
+
+        // Add Tabbed Pane to Frame
+        frame.add(tabbedPane, BorderLayout.CENTER);
+>>>>>>> Stashed changes
 
         configureMenuBar();
         configureComponents();

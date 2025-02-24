@@ -108,9 +108,16 @@ public class DoctorsPanel {
         JPanel buttonPanel = new JPanel();
 
         JButton addButton = new JButton("Add");
+        addButton.setFont(new Font("Calibre", Font.BOLD, 20));
+
         JButton editButton = new JButton("Edit");
+        editButton.setFont(new Font("Calibre", Font.BOLD, 20));
+
         JButton deleteButton = new JButton("Delete");
+        deleteButton.setFont(new Font("Calibre", Font.BOLD, 20));
+
         JButton refreshButton = new JButton("Refresh");
+        refreshButton.setFont(new Font("Calibre", Font.BOLD, 20));
 
         addButton.addActionListener(e -> addDoctor());
         editButton.addActionListener(e -> editDoctor());
