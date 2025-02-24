@@ -3,10 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>WorkingWithTabbedPanes</groupId>
   <artifactId>WORKING_WITH_TABBED_PANES</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging> <!-- Changed from "pom" to "jar" -->
+  <packaging>jar</packaging> <!-- Ensure it's a JAR, not POM -->
 
   <name>WORKING_WITH_TABBED_PANES</name>
   <url>http://maven.apache.org</url>
@@ -28,7 +29,6 @@
 
   <build>
     <plugins>
-      <!-- Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -39,19 +39,19 @@
         </configuration>
       </plugin>
 
-      <!-- JAR Plugin to package the compiled files -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.yourpackage.Main</mainClass> 
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
     </plugins>
   </build>
+
 </project>
