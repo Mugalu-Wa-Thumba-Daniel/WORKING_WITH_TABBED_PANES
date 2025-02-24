@@ -33,9 +33,13 @@ pipeline {
         }
 
         stage('Deploy to Itch.io') {
-            steps {
-                withCredentials([string(credentialsId: 'itch', variable: 'ITCH_API_KEY')]) {
-                    bat 'set BUTLER_API_KEY=%ITCH_API_KEY% && echo %BUTLER_API_KEY% && "%BUTLER_PATH%" push target/*.jar emma-nam/fasto:windows'
+    steps {
+        withCredentials([string(credentialsId: 'itch.io', variable: 'ITCH_API_KEY')]) {
+            bat """
+            set BUTLER_API_KEY=%ITCH_API_KEY%
+            echo API Key: %BUTLER_API_KEY%
+            "%BUTLER_PATH%" push target/*.jar emma-nam/fasto:windows
+            """
                 }
             }
         }
