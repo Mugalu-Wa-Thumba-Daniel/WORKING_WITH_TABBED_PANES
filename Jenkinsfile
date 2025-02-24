@@ -32,8 +32,7 @@ pipeline {
         withCredentials([string(credentialsId: 'itch', variable: 'ITCH_API_KEY')]) {
             bat """
             set BUTLER_API_KEY=%ITCH_API_KEY%
-            echo API Key: %BUTLER_API_KEY%
-            "%BUTLER_PATH%" push target/*.jar emma-nam/fasto:windows
+            "C:\\Program Files\\butler\\butler.exe" push target/working_with_tabbed_panels-1.0-SNAPSHOT.jar emma-namm/fasto:win
             """
                 }
             }
