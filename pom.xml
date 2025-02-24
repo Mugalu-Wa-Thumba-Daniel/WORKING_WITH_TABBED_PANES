@@ -7,7 +7,7 @@
   <groupId>WorkingWithTabbedPanes</groupId>
   <artifactId>WORKING_WITH_TABBED_PANES</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging> <!-- Ensure it's a JAR, not POM -->
+  <packaging>jar</packaging>
 
   <name>WORKING_WITH_TABBED_PANES</name>
   <url>http://maven.apache.org</url>
@@ -29,6 +29,7 @@
 
   <build>
     <plugins>
+      <!-- Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -39,6 +40,7 @@
         </configuration>
       </plugin>
 
+      <!-- Jar Plugin to Define Main Class -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -46,11 +48,27 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.yourpackage.Main</mainClass> 
+              <mainClass>your.actual.package.MainClass</mainClass> 
             </manifest>
           </archive>
         </configuration>
       </plugin>
+
+      <!-- Shade Plugin to Create an Executable JAR -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
 
