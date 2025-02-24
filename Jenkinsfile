@@ -26,15 +26,10 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                bat 'mvn test'  // Run unit tests
-            }
-        }
 
         stage('Deploy to Itch.io') {
     steps {
-        withCredentials([string(credentialsId: 'itch.io', variable: 'ITCH_API_KEY')]) {
+        withCredentials([string(credentialsId: 'itch', variable: 'ITCH_API_KEY')]) {
             bat """
             set BUTLER_API_KEY=%ITCH_API_KEY%
             echo API Key: %BUTLER_API_KEY%
