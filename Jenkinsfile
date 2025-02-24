@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Mugalu-Wa-Thumba-Daniel/Working_With_Menus_and_Panels.git'  // Clone the code from GitHub
+                git 'https://github.com/Mugalu-Wa-Thumba-Daniel/WORKING_WITH_TABBED_PANES.git'  // Clone the code from GitHub
             }
         }
 
