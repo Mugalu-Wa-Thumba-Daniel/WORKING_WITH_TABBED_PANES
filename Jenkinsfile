@@ -27,13 +27,10 @@ pipeline {
         }
 
 
-        stage('Deploy to Itch.io') {
-    steps {
-        withCredentials([string(credentialsId: 'itch', variable: 'ITCH_API_KEY')]) {
-            bat """
-            set BUTLER_API_KEY=%ITCH_API_KEY%
-            "C:\\butler\\butler.exe" push target/working_with_tabbed_panels-1.0-SNAPSHOT.jar emma-nam/fasto:win
-            """
+        stage('Deploy to Itch.io') {  
+    steps {  
+        withCredentials([string(credentialsId: 'itch.io', variable: 'ITCH_API_KEY')]) {  
+            bat '"C:\\butler\\butler.exe" push target/WORKING_WITH_TABBED_PANES-1.0-SNAPSHOT.jar emma-nam/fasto:win"'
                 }
             }
         }
