@@ -22,7 +22,7 @@ public class MainFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
-
+  
         mainController = new MainController(frame); // Initialize MainController
 
         configureMenuBar();
